@@ -116,3 +116,124 @@
         text-decoration: underline;
     }
 
+    /* Telefony i małe ekrany */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .cv-download-link {
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+  }
+
+  .contact-info {
+    font-size: 14px;
+  }
+}
+
+/* ============================
+   RESPONSYWNOŚĆ — TELEFONY
+   ============================ */
+@media (max-width: 768px) {
+
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    width: 100%;
+    margin: 0;
+    box-shadow: none;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  header div {
+    margin-bottom: 20px;
+  }
+
+  header h1 {
+    font-size: 28px;
+  }
+
+  header span {
+    font-size: 16px;
+  }
+
+  address ul {
+    padding-left: 0;
+  }
+
+  .address-icon {
+    width: 14px;
+    height: 14px;
+    padding: 6px;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  /* Hobbies — układ pionowy */
+  .hobbies li {
+    width: 100%;
+    flex-direction: row;
+    margin-bottom: 25px;
+  }
+
+  .hobbies img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .hobbies div {
+    margin-left: 15px;
+  }
+
+  /* Przycisk CV */
+  a[href$=".pdf"] {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+  }
+}
+
+/* Bardzo małe ekrany (np. stare telefony) */
+@media (max-width: 480px) {
+
+  header h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  p, li {
+    font-size: 15px;
+  }
+
+  .hobbies img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
